@@ -36,6 +36,11 @@ async function main() {
   // please check file 'src/database/db/db.json'
   const DURATION = 2000; //1s
 
+  await User.create({
+    email: 'dsasad',
+    password: 'a4sd56sa'
+  });
+
   // let's create new User
   const createdUser = await User.create({
     email: 'email@company.com',
